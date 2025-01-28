@@ -2,7 +2,7 @@ resource "linode_instance" "odoo" {
   label     = "odoo"
   image     = "linode/ubuntu22.04"
   region    = "us-ord"
-  type      = "g6-dedicated-4"
+  type      = "g6-dedicated-16"
   authorized_keys = [replace(file(var.pub_key), "\n", "")]
   root_pass = var.root_password
 
