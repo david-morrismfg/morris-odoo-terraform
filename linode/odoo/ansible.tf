@@ -60,6 +60,8 @@ resource "local_file" "ansible_host_vars" {
     odoo_routers:
       - hostname: ${var.domain}
         dbfilter: 'morris-erp'
+      - hostname: 'morriserp.dev'
+        dbfilter: 'morris-dev'
 
     odoo_admin_password: "${var.odoo_password}"
 
